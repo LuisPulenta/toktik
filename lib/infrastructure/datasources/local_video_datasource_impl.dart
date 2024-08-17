@@ -5,7 +5,7 @@ import 'package:toktik/shared/data/local_video_posts.dart';
 
 class LocalVideoDataSourceImpl implements VideoPostDatasource {
   @override
-  Future<List<VideoPost>> getFavoriteVideosByUser(int page) {
+  Future<List<VideoPost>> getFavoriteVideosByUser(String userID) {
     throw UnimplementedError();
   }
 

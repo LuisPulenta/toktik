@@ -28,7 +28,7 @@ class VideoButtons extends StatelessWidget {
         ),
         SpinPerfect(
           infinite: true,
-          duration: Duration(seconds: 5),
+          duration: const Duration(seconds: 5),
           child: const _CustomIconButton(
             value: 0,
             iconData: Icons.play_circle_outline,
@@ -46,7 +46,6 @@ class _CustomIconButton extends StatelessWidget {
   final Color color;
 
   const _CustomIconButton({
-    super.key,
     required this.value,
     required this.iconData,
     iconcolor,

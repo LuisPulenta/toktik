@@ -59,7 +59,7 @@ class _FullScreenPlayerState extends State<FullScreenPlayer> {
               children: [
                 VideoPlayer(controller),
                 VideoBackground(
-                  stops: [0.8, 1.0],
+                  stops: const [0.8, 1.0],
                 ),
                 Positioned(
                   bottom: 50,
@@ -80,7 +80,7 @@ class _FullScreenPlayerState extends State<FullScreenPlayer> {
 //---------------------- _VideoCaption -----------------------------
 class _VideoCaption extends StatelessWidget {
   final String caption;
-  const _VideoCaption({super.key, required this.caption});
+  const _VideoCaption({required this.caption});
 
   @override
   Widget build(BuildContext context) {
